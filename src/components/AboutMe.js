@@ -21,7 +21,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
     setDownloading(true);
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "Michael-Yeates-Resume.pdf";
+    link.download = "Michael-Yeates-Resume.pdf";    //here
     link.onload = () => {
       link.remove();
       setDownloading(false);
@@ -50,16 +50,16 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <div className="contentContainer">
-            <h4>Nice to meet you</h4>
-            <h5>Frontend Web Developer who creates amazing digital experiences!</h5>
+            <h2>Hola, soy Rubén Andía</h2>
+            <h5>Desarrollador Web Full-Stack.</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
             <div className="infoContainer">
               <div className="row">
                 <div className="col-12 col-md-6 info">
-                  <span>Name:</span>
-                  <p>Michael Yeates</p>
+                  <span>Nombre:</span>
+                  <p>{name}</p>
                 </div>
                 <div className="col-12 col-md-6 info">
                   <span>Email:</span>
@@ -70,11 +70,11 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               </div>
               <div className="row">
                 <div className="col-12 col-md-6 info">
-                  <span>Location:</span>
+                  <span>Lugar:</span>
                   <p>{location}</p>
                 </div>
                 <div className="col-12 col-md-6 info">
-                  <span>Availability:</span>
+                  <span>Disponibilidad:</span>
                   <p>{availability}</p>
                 </div>
               </div>
