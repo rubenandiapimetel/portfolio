@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import landingImage from "../../images/aboutme.jpeg";
+import landingImage from "../../images/eu-modified2.png";
 import SocialIcons from "../../components/SocialIcons";
 
 const Landing = ({ name }) => {
