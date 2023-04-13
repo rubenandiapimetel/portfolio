@@ -20,7 +20,7 @@
     "id": "2"
   },
   {
-    "title": "PipeX",
+    "title": "Probando un Pipe",
     "image": "./projectImages/team.png",
     "technologies": "C Language",
     "description": "Programa escrito en C  con los flags -Wall -Werror -Wextra que replica el comportamiento de un pipe en la Shell mediante un pequeño programa",
@@ -30,12 +30,12 @@
     "id": "3"
   },
   {
-    "title": "Quiz",
+    "title": "Reescribiendo Printf",
     "image": "./projectImages/quiz.png",
-    "technologies": "JS | HTML | CSS",
-    "description": "A quiz app on the fundamentals of JavaScript. There are 5 randomly selected multiple-choice questions and the user will have a time limit of 50 seconds. The remaining time will determine their score at the end. The user will be penalised by 10 seconds for every incorrect answer.",
-    "github": "https://github.com/mdyeates/coding-quiz",
-    "deployed": "https://mdyeates.github.io/coding-quiz/",
+    "technologies": "C Language",
+    "description": "Programa escrito en C que recrea la función variadica para la salida estandar llamada printf() con la mayoria de parametros para su formato ",
+    "github": "https://github.com/rubenandiapimetel/printf",
+    "deployed": "",
     "bgcolor": "#f85781",
     "id": "4"
   },
