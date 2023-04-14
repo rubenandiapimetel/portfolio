@@ -2,7 +2,7 @@
   {
     "title": "Oxy Shop",
     "image": "./projectImages/oxy.png",
-    "description": "",
+    "description": "Maquetacion escrita con JavaScript HTML y CSS de una tienda virtual",
     "technologies": "JavaScript | HTML | CSS",
     "github": "https://github.com/rubenandiapimetel/rubenandiapimetel.github.io",
     "deployed": "https://rubenandiapimetel.github.io/",
@@ -11,54 +11,40 @@
   },
   {
     "title": "Images Finder",
-    "image": "./projectImages/finder 1  .png",
+    "image": "./projectImages/finder.png",
     "technologies": "React.Js  | Redux | CSS ",
-    "description": "",
+    "description": "Un buscador de Imagenes hecho en react usando la api de Unsplsh donde puedes guardar las que mas te gusten usando Redux",
     "github": "https://github.com/rubenandiapimetel/images-finder",
     "deployed": "https://rubenandiapimetel.github.io/images-finder/",
     "bgcolor": "#29cbe0",
     "id": "2"
   },
   {
-    "title": "Probando un Pipe",
-    "image": "./projectImages/team.png",
+    "title": "Reescribiendo Printf",
+    "image": "./projectImages/Captura_printf.png",
     "technologies": "C Language",
-    "description": "Programa escrito en C  con los flags -Wall -Werror -Wextra que replica el comportamiento de un pipe en la Shell mediante un pequeño programa",
-    "github": "https://github.com/rubenandiapimetel/pipex",
-    "deployed": "",
-    "bgcolor": "#6c4bf4",
+    "description": "Programa escrito en C que recrea la función variádica de la salida estandar llamada printf() en este caso renombrada ft_printf, con la mayoráa de parametros para su formato.El programa viene con un main.c que sirve de ejemplo",
+    "github": "https://github.com/rubenandiapimetel/printf",
+    "bgcolor": "#f85781",
     "id": "3"
   },
   {
-    "title": "Reescribiendo Printf",
-    "image": "./projectImages/quiz.png",
+    "title": "Replicando stdlib.h ",
+    "image": "./projectImages/Captura_libft.png",
+    "description": "Programa que replica 34 de las funciones mas utilizadas de la libreráa estándar de C (stdlib.h).",
     "technologies": "C Language",
-    "description": "Programa escrito en C que recrea la función variadica para la salida estandar llamada printf() con la mayoria de parametros para su formato ",
-    "github": "https://github.com/rubenandiapimetel/printf",
-    "deployed": "",
-    "bgcolor": "#f85781",
+    "github": "https://github.com/rubenandiapimetel/libft",
+    "bgcolor": "#ffcc33",
     "id": "4"
   },
-
+  
   {
-    "title": "P1",
-    "image": "./projectImages/P1.png",
-    "description": "Welcome to P1, your virtual pit stop for the latest updates and standings in the world of F1. But that's not all—we've also got the ultimate card game where driver knowledge is the key to victory.",
-    "technologies": "React | Framer | CSS | Bootstrap | Node",
-    "github": "https://github.com/Jake-W95/P1",
-    "deployed": "https://p1-heroes.netlify.app/",
-    "bgcolor": "#ffcc33",
-    "id": "1"
-  },
-
-  {
-    "title": "Planner",
-    "image": "./projectImages/planner.png",
-    "technologies": "JS | Bootstrap | Moment",
-    "description": "Make every hour count with this simple Daily Planner App. You can keep track of all important appointments during a normal 9-5 work day!",
-    "github": "https://github.com/mdyeates/daily-planner",
-    "deployed": "https://mdyeates.github.io/daily-planner/",
-    "bgcolor": "#3e67ff",
-    "id": "6"
+    "title": "Replicando un Pipe en Linux",
+    "image": "./projectImages/Captura_pipe.png",
+    "technologies": "C Language",
+    "description": "Programa escrito en C con los flags -Wall -Werror -Wextra que replica el comportamiento de un pipe en la Shell mediante un pequeño programa",
+    "github": "https://github.com/rubenandiapimetel/pipex",
+    "bgcolor": "#6c4bf4",
+    "id": "5"
   }
 ]
