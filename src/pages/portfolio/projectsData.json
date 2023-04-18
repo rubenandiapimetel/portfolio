@@ -2,7 +2,7 @@
   {
     "title": "Oxy Shop",
     "image": "./projectImages/oxy.png",
-    "description": "Maquetacion escrita con JavaScript HTML y CSS de una tienda virtual",
+    "description":" Proyecto de diseño de una tienda virtual escrita con JavaScript HTML y CSS",
     "technologies": "JavaScript | HTML | CSS",
     "github": "https://github.com/rubenandiapimetel/rubenandiapimetel.github.io",
     "deployed": "https://rubenandiapimetel.github.io/",
@@ -13,7 +13,7 @@
     "title": "Images Finder",
     "image": "./projectImages/finder.png",
     "technologies": "React.Js  | Redux | CSS ",
-    "description": "Un buscador de Imagenes hecho en react usando la api de Unsplsh donde puedes guardar las que mas te gusten usando Redux",
+    "description": "Un buscador de Imagenes hecho en React.Js usando la api de Unsplash donde puedes guardar las que mas te gusten usando Redux",
     "github": "https://github.com/rubenandiapimetel/images-finder",
     "deployed": "https://rubenandiapimetel.github.io/images-finder/",
     "bgcolor": "#29cbe0",

@@ -55,10 +55,14 @@ const Landing = ({ name }) => {
                 .deleteChars(9)
                 .typeString("Java")
                 .pauseFor(1500)
-                .deleteAll()
+                .deleteChars(9)
                 .typeString("PostgreSQL")
                 .pauseFor(1500)
+                .deleteChars(9)
                 .deleteAll()
+                .typeString("C")
+                .pauseFor(1500)
+                .deleteChars(9)
                 .start();
               } 
                 tw();

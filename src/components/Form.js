@@ -1,79 +1,47 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_vd6hnow', 'template_4osj99v', form.current, 'x-B7h-wETYEvY92jq')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    setSuccess(false);
+    };
+
   const [ref, inView] = useInView({
     threshold: 0,
     triggerOnce: true,
   });
 
-  const [success, setSuccess] = useState(false);
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-    access_key: "4f412a8f-0a11-4ba9-8e37-e12661f36602",
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const data = JSON.stringify(formData);
-
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: data,
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setSuccess(true);
-        setFormData({
-          ...formData,
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-        setTimeout(() => {
-          setSuccess(false);
-        }, 3000);
-      })
-      .catch((err) => console.log(err));
-  };
+  const [success, setSuccess] = useState(true);
 
   return (
-    <motion.form
-      action=""
-      ref={ref}
+    <form
+      ref={form}
       className="contactForm"
       initial={{ x: "-10vw", opacity: 0 }}
       animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
-      onSubmit={handleSubmit}
+      onSubmit={sendEmail}
     >
       <h4 className="contentTitle">Message Me</h4>
       <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
         <input
           type="text"
           className="formControl"
-          onChange={handleChange}
-          value={formData.name}
           id="contactName"
-          name="name"
+          name="from_name"
           placeholder="Name"
           required
         />
@@ -82,31 +50,16 @@ const Form = () => {
         <input
           type="email"
           className="formControl"
-          onChange={handleChange}
-          value={formData.email}
           id="contactEmail"
-          name="email"
+          name="from_email"
           placeholder="Email"
           required
         />
       </div>
-      <div className="col-12 formGroup">
-        <input
-          type="text"
-          className="formControl"
-          onChange={handleChange}
-          value={formData.subject}
-          id="contactSubject"
-          name="subject"
-          placeholder="Subject"
-          required
-        />
-      </div>
+
       <div className="col-12 formGroup">
         <textarea
           className="formControl"
-          onChange={handleChange}
-          value={formData.message}
           name="message"
           id="contactMessage"
           rows="5"
@@ -115,9 +68,9 @@ const Form = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message Sent" : "Send Message"}</button>
+        <button  type = "submit" className="btn" >{success ? "Enviar mensaje" : "Mensaje enviado"}</button>
       </div>
-    </motion.form>
+    </form>
   );
 };
 
