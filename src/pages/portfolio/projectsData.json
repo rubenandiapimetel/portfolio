@@ -25,6 +25,7 @@
     "technologies": "C Language",
     "description": "Programa escrito en C que recrea la función variádica de la salida estandar llamada printf() en este caso renombrada ft_printf, con la mayoráa de parametros para su formato.El programa viene con un main.c que sirve de ejemplo",
     "github": "https://github.com/rubenandiapimetel/printf",
+    "deployed": "https://github.com/rubenandiapimetel/printf",
     "bgcolor": "#f85781",
     "id": "3"
   },
@@ -34,6 +35,7 @@
     "description": "Programa que replica 34 de las funciones mas utilizadas de la libreráa estándar de C (stdlib.h).",
     "technologies": "C Language",
     "github": "https://github.com/rubenandiapimetel/libft",
+    "deployed": "https://github.com/rubenandiapimetel/libft",
     "bgcolor": "#ffcc33",
     "id": "4"
   },
@@ -44,6 +46,7 @@
     "technologies": "C Language",
     "description": "Programa escrito en C con los flags -Wall -Werror -Wextra que replica el comportamiento de un pipe en la Shell mediante un pequeño programa",
     "github": "https://github.com/rubenandiapimetel/pipex",
+    "deployed": "https://github.com/rubenandiapimetel/pipex",
     "bgcolor": "#6c4bf4",
     "id": "5"
   }
