@@ -1,5 +1,4 @@
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
