@@ -14,8 +14,8 @@ const ContactInfo = ({ name, email, location }) => {
       animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
     >
-      <h4 className="contentTitle">Contact Information</h4>
-      <p className="infoDescription">Open for opportunities. Let's connect and build something awesome together! </p>
+      <h4 className="contentTitle">Información de contacto</h4>
+      <p className="infoDescription">Abierto a oportunidades. ¡Conectémonos y construyamos algo increíble juntos! </p>
       <ul className="listInfo">
         <li>
           <div className="personalContactInfo">
@@ -23,7 +23,7 @@ const ContactInfo = ({ name, email, location }) => {
               <i className="icon fa-solid fa-user"></i>{" "}
             </span>
             <div className="mediaWrap">
-              <h6 className="infoType">Name</h6>
+              <h6 className="infoType">Nombre</h6>
               <span className="infoValue">{name}</span>
             </div>
           </div>
@@ -34,7 +34,7 @@ const ContactInfo = ({ name, email, location }) => {
               <i className="icon fa-solid fa-location-pin "></i>{" "}
             </span>
             <div className="mediaWrap">
-              <h6 className="infoType">Location</h6>
+              <h6 className="infoType">Ubicación</h6>
               <span className="infoValue">{location}</span>
             </div>
           </div>

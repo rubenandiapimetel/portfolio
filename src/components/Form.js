@@ -34,7 +34,7 @@ const Form = () => {
       transition={{ duration: 0.4, ease: "easeInOut" }}
       onSubmit={sendEmail}
     >
-      <h4 className="contentTitle">Message Me</h4>
+      <h4 className="contentTitle">Escríbeme</h4>
       <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
         <input
           type="text"
